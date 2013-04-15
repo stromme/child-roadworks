@@ -10,4 +10,5 @@ function hs_deregister_scripts() {
 	
 }
 add_action( 'wp_print_scripts', 'hs_deregister_scripts', 11 );
+
  ?>

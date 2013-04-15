@@ -21,10 +21,11 @@ $seo = get_location_seo();
 				<h1 class="multi-line"><?php echo get_bloginfo ( 'description' ) ?> </h1>
 			</li>
 			<li class="headline-phone">
-				<h4><a href=""><?=get_phone_number()?></a></h4>
+				<?php $tb_company = get_option('tb_company'); ?>
+				<h2><a href=""><?=get_phone_number()?></a></h2>
 			</li>
 			<li class="headline-link hidden-phone hidden-tablet">
-				<h4><a href="" class="quick-estimate">Quick Estimate</a></h4>
+				<h2 class="white"><span class="visible-phone-portrait"><?=esc_html( stripslashes($tb_company['name']))?></span><a href="" class="quick-estimate">Quick Estimate</a></h2>
 			</li>
 		</ul>
 	</div>
