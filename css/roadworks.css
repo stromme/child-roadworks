@@ -3,6 +3,18 @@
  *
  *
  */
+.orange {
+  color: #ffd200;
+}
+.orangeDark {
+  color: #cca800;
+}
+.orangeLight {
+  color: #fff5a2;
+}
+.orangeText {
+  color: #E09D2A;
+}
 .bg-slate {
   background-color: #fdfdfd;
   background-image: -moz-linear-gradient(top, #ffffff, #fbfbfb);

@@ -30,4 +30,4 @@ $seo = get_location_seo();
 		</ul>
 	</div>
 </section>
-<!-- / Headline -->
+<!-- / Headline -->	
