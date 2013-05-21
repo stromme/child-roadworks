@@ -41,7 +41,7 @@
     <div>
       <div class="input-prepend">
         <span class="add-on"><i class="icon-map-marker"></i></span>
-        <input id="lead-city" validation="not-empty" placeholder="City" type="text" value="" />
+        <input id="lead-city" validation="not-empty" placeholder="Job Location" type="text" value="" />
       </div>
     </div>
     <div>
