@@ -22,6 +22,12 @@
 		</div>
 		<div>
 			<div class="input-prepend">
+			    <span class="add-on"><i class="icon-phone-halfling"></i></span>
+			    <input id="lead-company" validation="not-empty" placeholder="Company Name" type="text" value="" />
+			</div>
+		</div>
+		<div>
+			<div class="input-prepend">
 			    <span class="add-on"><i class="icon-envelope"></i></span>
 			    <input id="lead-email" validation="not-empty email" placeholder="Email Address" type="text" value="" />
 			</div>
@@ -30,6 +36,18 @@
 			<div class="input-prepend">
 			    <span class="add-on"><i class="icon-phone-halfling"></i></span>
 			    <input id="lead-phone" validation="not-empty phone" placeholder="Phone Number" type="text" value="" />
+			</div>
+		</div>
+		<div>
+			<div class="input-prepend">
+			    <span class="add-on"><i class="icon-phone-halfling"></i></span>
+			    <input id="lead-location" validation="not-empty" placeholder="Job Location" type="text" value="" />
+			</div>
+		</div>
+		<div>
+			<div class="input-prepend">
+			    <span class="add-on"><i class="icon-phone-halfling"></i></span>
+			    <textarea id="lead-services" placeholder="Service Required"></textarea>
 			</div>
 		</div>
 		<div class="bumper-top-small bumper-bottom">
