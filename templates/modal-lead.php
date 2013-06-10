@@ -50,12 +50,17 @@
         <span class="checkboxes">
           <span class="checkboxes-title">Select Services</span>
           <?php
-          $tb_industry = get_option('tb_industry');
-          $suggestions = $tb_industry['services'];
-          if($suggestions && is_array($suggestions)) {
-            foreach ($suggestions as $key => $value) { ?>
-            <span><input id="service-<?=$key?>" class="lead-services" type="checkbox" value="<?=$value?>" /><label for="service-<?=$key?>"><?=$value?></label></span>
-            <? }
+          $services = get_terms('services', array('hide_empty' => 0, 'orderby' => 'term_name', 'order' => 'ASC'));
+          $i=0;
+          foreach ($services as $key=>$service) {
+            $desc = json_decode($service->description);
+            $services[$key]->order = ($desc && isset($desc->order))?($desc->order):$i;
+            ++$i;
+            unset($service);
+          }
+          uasort($services, "compare_promote_order");
+          foreach($services as $service){
+            ?><span><input id="service-<?=$service->term_id?>" class="lead-services" type="checkbox" value="<?=$service->name?>" /><label for="service-<?=$service->term_id?>"><?=$service->name?></label></span><?
           }
           ?>
         </span>
