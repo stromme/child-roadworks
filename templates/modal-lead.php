@@ -72,6 +72,9 @@
       echo recaptcha_get_html('6LeWPOMSAAAAAFOhDTuE_puAVHNqL3ff8R4tXsKq');
     ?></div>
     </div>
+    <div class="bumper-top-small bumper-bottom">
+      <div class="pen-stroke"></div>
+    </div>
 		<p class="page-left page-right">We receive your request instantly via SMS and usually <strong><u>respond within minutes!</u></strong></p>
 	</div>
 	
