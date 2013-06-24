@@ -66,6 +66,12 @@
         </span>
       </div>
     </div>
+    <div>
+      <div class="input-prepend"><?php
+      require_once(TOOLBOX_INC.'/recaptchalib.php');
+      echo recaptcha_get_html('6LeWPOMSAAAAAFOhDTuE_puAVHNqL3ff8R4tXsKq');
+    ?></div>
+    </div>
 		<p class="page-left page-right">We receive your request instantly via SMS and usually <strong><u>respond within minutes!</u></strong></p>
 	</div>
 	
